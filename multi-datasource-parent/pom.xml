@@ -28,6 +28,7 @@
         <mysql.driver.version>8.0.17</mysql.driver.version>
         <mybatisplus.version>3.3.2</mybatisplus.version>
         <velocity.version>2.2</velocity.version>
+        <dynamic.datasource.version>3.2.0</dynamic.datasource.version>
     </properties>
 
     <dependencyManagement>
@@ -70,6 +71,12 @@
                 <groupId>org.apache.velocity</groupId>
                 <artifactId>velocity-engine-core</artifactId>
                 <version>${velocity.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic.datasource.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
